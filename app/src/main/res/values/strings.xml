@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Oplus Network Modes</string>
+    <string name="module_description">Adds extra modes to the stock Oplus preferred network list</string>
+</resources>
+
