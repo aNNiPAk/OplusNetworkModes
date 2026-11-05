@@ -1,0 +1,36 @@
+name: Bug report / Ошибка
+description: Report a problem or firmware compatibility issue.
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Device and software / Устройство и ПО
+      description: Model, full firmware build, Android version, Xposed framework and its version/API.
+      placeholder: "CPH2767, 16.0.9.401(EX01), Android 16, framework …, API 102"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Module version and source / Версия и источник APK
+      placeholder: "1, GitHub Release / Actions / local build"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected and actual result / Как повторить
+      description: Include the selected network mode, SIM slot and UI language if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Module logs / Логи модуля
+      description: Attach relevant OplusNetworkModes or framework logs. Remove phone numbers, identifiers and other personal data.
+      render: text
+  - type: textarea
+    id: disabled
+    attributes:
+      label: Behavior with the module disabled / Без модуля
+      description: Disable the module, reboot and describe whether the problem persists.
